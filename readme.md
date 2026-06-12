@@ -16,7 +16,7 @@ trailing / aggressive dump-on-green until it exits.
 
 built from the spec in `../instructions.md`.
 
-## the important bit, up front
+## important
 
 **it runs in dry-run (paper) mode by default and that's the only mode that
 actually does anything end-to-end right now.** the whole pipeline works and you
@@ -48,7 +48,7 @@ and that's on purpose — better than firing off a broken transaction.
 with no rpc configured it generates a fake launch stream so you can play with the
 whole thing offline. that's what you're seeing in dry-run.
 
-## what needs work (before it can trade for real)
+## what needs work
 
 these are stubbed behind clean interfaces. they **throw a clear error instead of
 sending a bad transaction**, so live mode fails safe until they're done:
